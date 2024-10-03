@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root{
+
+/*  Primary */
+
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+/*  Neutral */
+
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "League Spartan", sans-serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Light-Grayish-Magenta);
+    min-height: 100vh;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 55px 22px;
+}
+.stats-reviews{
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+.stats-reviews .title{
+    color: var(--Very-Dark-Magenta);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.stats-reviews .introduction{
+    color: var(--Dark-Grayish-Magenta);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-bottom: 35px;
+    
+}
+.ratings{
+    margin-bottom: 33px;
+}
+.ratings p{
+    color: var(--Very-Dark-Magenta);
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+/* section feedbacks */
+
+.feed-container{
+    background-color: var(--Very-Dark-Magenta);
+    margin-bottom: 14px;
+    padding: 28px;
+    color: white;
+    border-radius: 10px;
+}
+.profile{
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.feed-container img{
+    width: 38px;
+    border-radius: 100%;
+    margin-right: 18px;
+}
+
+.user-name h3{
+    color: var(--Light-Grayish-Magenta);
+    font-size: 15px;
+    font-weight: 600;
+}
+.user-name span{
+    color: var(--Soft-Pink);
+    font-size: 14px;
+
+}
+.feed-container p{
+    line-height: 20px;
+    font-size: 15px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media (min-width:1000px){
+    .main{
+        align-items: normal;
+        margin: 100px auto;
+    }
+    .stats-reviews{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    .stats{
+        width: 500px;
+        padding-right: 60px;
+    }
+    .Reviews{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 35px;
+        
+    }
+    .ratings{
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 55px;
+    }
+    .ratings img{
+        margin-right: 10px;
+        padding-right: 1px;
+    }
+    #tech{
+        position: relative;
+        left: 60px;
+    }
+    #Guru{
+        position: relative;
+        left: 120px;
+    }
+    .stats-reviews .title{
+        font-size: 52px;
+        font-weight: 700;
+        margin-bottom: 30px;
+
+    }
+    .stats-reviews .introduction{
+        font-size: 16px;
+        font-weight: 500; 
+        line-height: 22px;    
+    }
+
+    .feedbacks{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .feed-container{
+        width: 300px;
+        margin-right: 25px;
+        
+    }
+    #irene{
+        position: relative;
+        top: 20px;
+    }
+    #anne{
+        position: relative;
+        top: 40px;
+    }
+}
